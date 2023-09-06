@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+.container{
+    align-items: center;
+    width: 100vw;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;    
+}
+
+.login_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 100px;
+}
+
+.login_elements{
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    margin: 20px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+}
+
+
+
+
