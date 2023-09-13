@@ -31,15 +31,15 @@ export function init_login_page(){
        
         let response = await fetch(`https://teaching.maumt.se/apis/SR/v1/?user_name=${user_name}&password=${password}&login`);
         let resource = await response.json();
-       
         
-        document.querySelector(".login_username").value = "";
-        document.querySelector(".login_password").value = "";
+        
         if(response.status === 200){
-            init_app();
+            init_app(resource.user_id, document.querySelector(".login_password").value);
+           
         }
         else{
-
+            document.querySelector(".login_username").value = "";
+            document.querySelector(".login_password").value = "";
         }
     })
 }
