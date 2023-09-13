@@ -3,11 +3,11 @@ function popup(message){
 }
 
 
-export async function delete_user_func(password, user_id){
+export async function delete_user_func(a_user_id, a_password){
    let body = {
         action: "delete_user",
-        user_id: user_id,
-        password: password,
+        user_id: a_user_id,
+        password: a_password,
     }
     let request_body = {
         method: "DELETE",

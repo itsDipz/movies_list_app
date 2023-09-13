@@ -3,7 +3,6 @@ import { delete_user_func } from "../utils.js";
 import { init_app } from "../movie_front/init_app.js";
 
 export function init_login_page(){
-    // delete_user_func("fuse1111", );
     document.querySelector("link").href = "./login_register/login.css"
     let container = document.querySelector(".container");
     container.innerHTML = "";
